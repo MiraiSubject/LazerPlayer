@@ -10,6 +10,8 @@ A music player for osu!lazer beatmaps.
 
 Currently this program pretends to be osu!lazer to get access to the database.
 
+While I made this using the osu!lazer API, the chance still exists that the database will throw a fit. If you encounter any such issues while using this program, I recommend you reset your database and start from scratch again.
+
 ## Licence
 
 LazerPlayer's code is licensed under the [MIT licence](https://opensource.org/licenses/MIT). Please see [the licence file](LICENCE) for more information. [tl;dr](https://tldrlegal.com/license/mit-license) you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
