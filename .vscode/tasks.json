@@ -1,0 +1,75 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "Build (Tests, Debug)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "-p:GenerateFullPaths=true",
+                "-m",
+                "-verbosity:m",
+                "LazerPlayer.Tests"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build (Tests, Release)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "-p:Configuration=Release",
+                "-p:GenerateFullPaths=true",
+                "-m",
+                "-verbosity:m",
+                "LazerPlayer.Tests"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build (LazerPlayer, Debug)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "-p:Configuration=Debug",
+                "-p:GenerateFullPaths=true",
+                "-m",
+                "-verbosity:m",
+                "LazerPlayer.Desktop"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build (LazerPlayer, Release)",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "-p:Configuration=Release",
+                "-p:GenerateFullPaths=true",
+                "-m",
+                "-verbosity:m",
+                "LazerPlayer.Desktop"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Restore",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "restore",
+                "LazerPlayer.sln"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

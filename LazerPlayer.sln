@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazerPlayer.Desktop", "LazerPlayer.Desktop\LazerPlayer.Desktop.csproj", "{CA48D90A-6256-489F-8F20-A8412502F891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazerPlayer", "LazerPlayer\LazerPlayer.csproj", "{CC010EE0-A545-4852-BD66-878E6C2FC10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazerPlayer.Tests", "LazerPlayer.Tests\LazerPlayer.Tests.csproj", "{2397A070-B468-4DFD-AB1A-03E4B3E9183F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA48D90A-6256-489F-8F20-A8412502F891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA48D90A-6256-489F-8F20-A8412502F891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA48D90A-6256-489F-8F20-A8412502F891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA48D90A-6256-489F-8F20-A8412502F891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC010EE0-A545-4852-BD66-878E6C2FC10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC010EE0-A545-4852-BD66-878E6C2FC10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC010EE0-A545-4852-BD66-878E6C2FC10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC010EE0-A545-4852-BD66-878E6C2FC10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2397A070-B468-4DFD-AB1A-03E4B3E9183F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2397A070-B468-4DFD-AB1A-03E4B3E9183F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2397A070-B468-4DFD-AB1A-03E4B3E9183F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2397A070-B468-4DFD-AB1A-03E4B3E9183F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
