@@ -12,6 +12,9 @@ using osu.Game.Beatmaps;
 
 namespace LazerPlayer.Music
 {
+    // Remake of this class was required because osu! side has DI'd mods and hooks for removed and added beatmaps.
+    // We don't need any of those.
+    // Reference: https://github.com/ppy/osu/blob/d54e9ab4810ef27dd9c3ef9c8c1a6c851cff8972/osu.Game/Overlays/MusicController.cs
     public class MusicController : CompositeDrawable
     {
         [Resolved]
