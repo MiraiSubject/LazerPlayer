@@ -44,16 +44,16 @@ namespace LazerPlayer.Music
                 }
             };
 
-            // filter.Search.OnCommit += (sender, newText) =>
-            // {
-            //     BeatmapInfo toSelect = playlist.FirstVisibleSet?.Beatmaps?.FirstOrDefault();
+            filter.Search.OnCommit += (sender, newText) =>
+            {
+                BeatmapInfo toSelect = playlist.FirstVisibleSet?.Beatmaps?.FirstOrDefault();
 
-            //     if (toSelect != null)
-            //     {
-            //         beatmap.Value = beatmaps.GetWorkingBeatmap(toSelect);
-            //         beatmap.Value.Track.Restart();
-            //     }
-            // };
+                if (toSelect != null)
+                {
+                    beatmap.Value = beatmaps.GetWorkingBeatmap(toSelect);
+                    beatmap.Value.Track.Restart();
+                }
+            };
         }
 
         protected override void LoadComplete()
