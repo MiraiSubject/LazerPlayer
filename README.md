@@ -3,12 +3,12 @@
 A music player for osu!lazer beatmaps.
 
 <p align="center">
-  <img width="500px" src="assets/main.png">
+  <img src="assets/main.png">
 </p>
 
 ## Notes
 
-Currently this program pretends to be osu!lazer. S
+Currently this program pretends to be osu!lazer to get access to the database.
 
 ## Licence
 
