@@ -53,7 +53,7 @@ namespace LazerPlayer
             dependencies.Cache(Storage);
 
             var defaultBeatmap = new DummyWorkingBeatmap(Audio, Textures);
-            dependencies.Cache(BeatmapManager = new BeatmapManager(Storage, contextFactory, RulesetStore, null, Audio, Host, defaultBeatmap, false));
+            dependencies.Cache(BeatmapManager = new BeatmapManager(Storage, contextFactory, RulesetStore, null, Audio, Resources, Host, defaultBeatmap, false));
             dependencies.Cache(RulesetStore = new RulesetStore(contextFactory, Storage));
 
             Beatmap = new NonNullableBindable<WorkingBeatmap>(defaultBeatmap);

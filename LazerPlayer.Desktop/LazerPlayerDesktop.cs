@@ -10,10 +10,6 @@ namespace LazerPlayer.Desktop
 
             switch (host.Window)
             {
-                case OsuTKDesktopWindow desktopGameWindow:
-                    desktopGameWindow.Title = Name;
-                    break;
-
                 case SDL2DesktopWindow desktopWindow:
                     desktopWindow.Title = Name;
                     break;

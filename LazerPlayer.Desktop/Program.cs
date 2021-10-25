@@ -10,10 +10,8 @@ namespace LazerPlayer.Desktop
         [STAThread]
         public static void Main(string[] args)
         {
-            bool useOsuTK = args.Contains(@"--tk");
-
             // Hopefully a temporary thing until I find a better way to access osu!lazer's database.
-            using (GameHost host = Host.GetSuitableHost(@"osu", useOsuTK: useOsuTK))
+            using (GameHost host = Host.GetSuitableHost(@"osu"))
             using (Game game = new LazerPlayerDesktop())
                 host.Run(game);
         }

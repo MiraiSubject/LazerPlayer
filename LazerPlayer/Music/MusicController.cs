@@ -14,7 +14,7 @@ namespace LazerPlayer.Music
 {
     // Remake of this class was required because osu! side has DI'd mods and hooks for removed and added beatmaps.
     // We don't need any of those.
-    // Reference: https://github.com/ppy/osu/blob/d54e9ab4810ef27dd9c3ef9c8c1a6c851cff8972/osu.Game/Overlays/MusicController.cs
+    // Reference: https://github.com/ppy/osu/blob/37ec4db017beb6f46d545f0e6d00134ff206a98b/osu.Game/Overlays/MusicController.cs
     public class MusicController : CompositeDrawable
     {
         [Resolved]
@@ -46,7 +46,6 @@ namespace LazerPlayer.Music
         /// Includes direction information for display purposes.
         /// </summary>
         public event Action<WorkingBeatmap, TrackChangeDirection> TrackChanged;
-
 
         [BackgroundDependencyLoader]
         private void load()
@@ -129,7 +128,7 @@ namespace LazerPlayer.Music
 
             if (playable != null)
             {
-                changeBeatmap(beatmaps.GetWorkingBeatmap(playable.Beatmaps.First(), beatmap.Value));
+                changeBeatmap(beatmaps.GetWorkingBeatmap(playable.Beatmaps.First()));
                 restartTrack();
                 return PreviousTrackResult.Previous;
             }
@@ -154,7 +153,7 @@ namespace LazerPlayer.Music
                 else
                     return false;
             }
-            changeBeatmap(beatmaps.GetWorkingBeatmap(playable.Beatmaps.First(), beatmap.Value));
+            changeBeatmap(beatmaps.GetWorkingBeatmap(playable.Beatmaps.First()));
             restartTrack();
             return true;
 
